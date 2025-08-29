@@ -1,0 +1,63 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2506                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     pisoFoam;
+
+startFrom       startTime;
+
+startTime       21;
+
+stopAt          endTime;
+
+endTime         80;
+
+deltaT          0.035;
+
+writeControl    timeStep;
+
+writeInterval   25;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+forceCoeffs
+    {
+        type            forceCoeffs;
+        libs            ("libforces.so");
+        patches         (cylinder); // Replace 'inlet outlet' with your patch names
+        rho             rho;            // Name of the density field
+        p               p;              // Name of the pressure field
+        U               U;              // Name of the velocity field
+        Aref            3.14149;      // Reference area in square meters
+        lRef            1;    // Reference length in meters
+        Cm              (0 0 0); // Center of rotation (e.g., (0 0 0))
+        liftDir         (0 1 0);        // Y-direction for lift
+        dragDir         (1 0 0);        // X-direction for drag (adjust as needed)
+        pitchAxis       (0 0 1);        // Z-axis for pitch
+        pRef            1;  // Reference pressure
+    }
+// ************************************************************************* //
