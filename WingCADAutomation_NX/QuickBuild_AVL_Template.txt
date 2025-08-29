@@ -1,0 +1,76 @@
+# Simple Wing
+# 
+
+# Case Title
+QuickBuild_AVL_Template
+
+# Mach
+0.0
+
+# iYsym iZsym Zsym
+0 0 0
+
+# Sref Cref Bref
+3 .5 6
+
+# Xcg Ycg Zcg
+0.0 0.0 0.0
+
+# CDp
+0.00
+
+###############################
+# 	   Main Wing	      #
+###############################
+SURFACE
+Wing
+
+# Nchord Cspace Nspan Sspace
+15 1.0 20 1
+
+# Make the Wings Symmetrical
+YDUPLICATE
+0.0
+
+SCALE
+# Xscale Yscale Zscale
+1.0 1.0 1.0
+
+TRANSLATE
+# dX dY dZ
+0.0 0.0 0.0
+
+ANGLE
+3.0
+
+# P0 (Root)
+SECTION
+# Xle Yle Zle Chord Ainc
+0.0 0.0 0.0 2.0 3.0
+
+# Airfoil
+AFILE
+N:\windat.v2\Documents\Projects\QuickBuild\TestFolder\naca2412.dat
+
+# P1
+SECTION
+# Xle Yle Zle Chord Ainc
+0.5 3.0 0.0 1.0 2.0
+
+# Airfoil
+AFILE
+N:\windat.v2\Documents\Projects\QuickBuild\TestFolder\naca2412.dat
+
+
+# P2
+SECTION
+# Xle Yle Zle Chord Ainc
+1.0 6.0 0.0 0.5 -1
+
+# Airfoil
+AFILE
+N:\windat.v2\Documents\Projects\QuickBuild\TestFolder\naca0012.dat
+
+
+
+
