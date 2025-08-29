@@ -1,2 +1,11 @@
-# CFD-Projects
-Hello, this is a growing collection of CFD projects I have done in STAR-CCM+ as well as OpenFOAM. 
+# Projects
+
+Hello, my name is Jose Camino-Cantu, I am student at the Univerity of Michigan graduating May 2026.
+I am majoring in Aerospace Engineering with minors in both Computer Science and Mathematics.
+I intend to continue my education with a MSE in Aerospace Engineering with an expected gradtion of May 2027.
+
+My primarily interests include aerodynamic analysis, aircraft design, and CFD, specifically with programming integration. 
+
+This repository serves to share some of my personal projects and will continue to be updated. 
+
+Go Blue!
