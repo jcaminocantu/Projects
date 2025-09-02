@@ -1,7 +1,7 @@
 
 Unsteady Flow over a Cylinder.
 
-Performed at Re=80, CFL_max = 0.89
+Performed at Re=80, CFL_max = 0.93
 Results: Cd = 1.08, St = 0.163, 
 
 This project marks my graduation from OpenFoam tutorials and creating my first simulation from scratch. 
