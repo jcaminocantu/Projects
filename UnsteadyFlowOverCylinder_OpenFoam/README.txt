@@ -11,4 +11,4 @@ Mesh was created using blockMesh, with the overall design  adapted from "Unstead
 
 Although it was a laminar simulation and this no wall functions were utilized, initial mesh size was determined to achieve a y+ ~= 1 as an upperbound, then further refined. 
 
-Overall, I am happy with the results, achieving agreement within 10% of literature.
+Overall, I am happy with the results, achieving agreement of the drag coefficient and Strouhal number within 10% of literature.
