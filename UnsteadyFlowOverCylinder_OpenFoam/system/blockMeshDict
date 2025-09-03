@@ -38,7 +38,7 @@ theta   45;
 // Divisions: Radial, quarter circumference, outer region and z-directions.
 nRadial     28;
 nTangent    40;
-nInlet      16;
+nInlet      24;
 nxNear      20;
 nxFar      120;
 nyNear      $nTangent;
@@ -46,7 +46,7 @@ nyFar       $nInlet;
 nz          1;
 
 // Grading
-gOuterTop   2;
+gOuterTop   4;
 gOuterBot   #calc "1.0 / $gOuterTop";
 gInner      1.5;
 gFarTop     4;
