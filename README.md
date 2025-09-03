@@ -8,4 +8,4 @@ My primary interests include aerodynamic analysis, aircraft design, and CFD, spe
 
 This repository serves to share some of my personal projects and will continue to be updated. 
 
-Go Blue!
+Go Blue!!
